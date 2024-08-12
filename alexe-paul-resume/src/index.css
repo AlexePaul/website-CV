@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,26 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root{
+  --text: #100c12;
+  --background: #f5f2f7;
+  --primary: #503c5d;
+  --secondary: #bf9cac;
+  --accent: #955f60;
+}
+
+@media (prefers-color-scheme : dark) {
+  :root{
+    --text: #f1edf3;
+    --background: #0b080d;
+    --primary: #b6a2c3;
+    --secondary: #634050;
+    --accent: #9f6a6b;
+  }
+}
+
+*{
+  background-color: var(--background);
 }
